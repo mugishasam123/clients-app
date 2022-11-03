@@ -5,7 +5,7 @@
 
 > Clients-providers is an app that manages clients informations with providers associated
  
-![image](https://user-images.githubusercontent.com/90524466/199809017-ca6adcf7-3dbe-4f12-bce1-d8b2ac29bbb5.png)
+![image](https://user-images.githubusercontent.com/90524466/199809449-44f547a7-1b4c-4109-a6be-271aa444e0f1.png)
 
 
 Additional description about the project and its features.
