@@ -44,7 +44,7 @@ $ Open your terminal and run npm install --prefix ./frontend to install frontend
 $ Run npm install to install backend dependencies
 
 ```
-### Database
+### Database setup
 
 > - The database (`clients-app`) of this application will be created
 > - automatically locally when you run the app, so there is no configurations needed.
