@@ -131,7 +131,7 @@
  *             properties:
  *               message:
  *                 type: string
- *                 description:The Confirmation of a successfull provider deletion
+ *                 description: The Confirmation of a successfull provider deletion.
  *             example:
  *               message: 'The provider was deleted successfully'
  *      400:

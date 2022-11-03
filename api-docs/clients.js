@@ -37,7 +37,7 @@
  *         name: 'mugisha'
  *         email: 'mugisha@gmail.com'
  *         phone: '+250782067198'
- *         providers: [{_id: 'Provider's id 12333'}]
+ *         providers: [{_id: 'Providerid12333'}]
  *     Client404:
  *       type: object
  *       required:
