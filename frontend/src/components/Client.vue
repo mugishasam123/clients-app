@@ -34,12 +34,12 @@ const showComma = (index) => {
       <span v-for="(provider, index) in clientProviders()" :key="index">{{ provider.name
       }}<span v-if="showComma(index)">,&nbsp;&nbsp;</span></span>
     </td>
-    <td class="edit-delete-btns">
-      <button type="button" class="edit-btn" data-bs-toggle="modal" :data-bs-target="`#editClientModal${client._id}`">
+    <td class="flex flex-wrap space-x-4">
+      <button type="button" class="text-blue-400 underline  border-0 bg-transparent active:transform active:scale-[0.8]" data-bs-toggle="modal" :data-bs-target="`#editClientModal${client._id}`">
         Edit
       </button>
       <EditClient :client="client" />
-      <button type="button" class="delete-btn" @click="deleteClient(client._id)">
+      <button type="button" class="text-red-500 underline  border-0 bg-transparent active:transform active:scale-[0.8]" @click="deleteClient(client._id)">
         Delete
       </button>
     </td>
@@ -48,32 +48,8 @@ const showComma = (index) => {
 
 <style scoped>
 td {
-  padding-left: 3rem;
-  font-size: 1.8rem;
+  padding-left: 2.8rem;
+  font-size: 1.7rem;
 }
 
-.edit-delete-btns {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.edit-delete-btns>button {
-  border: none;
-  background: none;
-}
-
-.edit-btn {
-  color: #35748a;
-  text-decoration: solid underline #35748a;
-}
-
-.delete-btn {
-  color: red;
-  text-decoration: solid underline red;
-}
-
-.edit-delete-btns>button:active {
-  transform: scale(0.9);
-}
 </style>

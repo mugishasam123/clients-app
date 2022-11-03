@@ -18,6 +18,6 @@ body {
 }
 
 button:active {
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
 </style>

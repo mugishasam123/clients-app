@@ -45,7 +45,7 @@ const addProvider = async () => {
     const { error } = response.data;
     if (error.match('name_1 dup key')) {
       setProviderError(
-        `Provider with the name ${providerName.value} already exists!`,
+        `The provider with the name ${providerName.value} already exists`,
       );
     } else {
       console.error(error);
@@ -140,7 +140,7 @@ const addProvider = async () => {
         <div class="modal-footer">
           <button
             type="button"
-            class="delete-btn"
+            class="delete-btn hover:bg-gray-300 hover:text-black"
             @click="$emit('delete-client')"
             v-show="modal.title === 'Edit Client'"
           >
@@ -150,6 +150,7 @@ const addProvider = async () => {
             type="button"
             data-bs-dismiss="modal"
             @click="$emit('cancel-operation')"
+           
           >
             Cancel
           </button>
@@ -163,28 +164,6 @@ const addProvider = async () => {
 </template>
 
 <style scoped>
-.modal {
-  padding: 0 !important;
-}
-
-.modal-dialog {
-  min-width: clamp(60%, 80rem, 80%) !important;
-}
-
-.error-message {
-  width: 75%;
-  background-color: #da7c7e;
-  margin-inline: auto;
-  color: white;
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.modal-title {
-  color: #35748a;
-  font-size: 2.5rem;
-}
-
 .input-container {
   display: flex;
   align-items: center;
@@ -260,9 +239,25 @@ label {
   margin-right: auto;
 }
 
-@media screen and (max-width: 990px) {
-  .input-container {
-    width: 100% !important;
-  }
+.modal {
+  padding: 0 !important;
+}
+
+.modal-dialog {
+  min-width: clamp(60%, 80rem, 80%) !important;
+}
+
+.error-message {
+  width: 75%;
+  background-color: #da7c7e;
+  margin-inline: auto;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.modal-title {
+  color: #35748a;
+  font-size: 2.5rem;
 }
 </style>

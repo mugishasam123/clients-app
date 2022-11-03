@@ -64,7 +64,7 @@ const checkedBox = (provider) => {
 .providers {
   margin-top: 2rem;
   width: 100%;
-  background-color: aliceblue;
+  background-color: #E6ECEC ;
   font-size: 2rem;
 }
 

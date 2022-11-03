@@ -22,7 +22,7 @@ const editProvider = async () => {
     const { error } = response.data;
     if (error.match('name_1 dup key')) {
       setProviderError(
-        `Provider with the name ${providerName.value} already exists!`,
+        `The provider with the name ${providerName.value} already exists`,
       );
     } else {
       console.error(error);
@@ -37,12 +37,12 @@ const editProvider = async () => {
     <br />
     <button
       type="button"
-      class="m-3 btn btn-danger"
+      class="m-3 btn btn-danger text-black "
       @click="() => (provider.editing = false)"
     >
       Cancel
     </button>
-    <button type="submit" class="btn btn-secondary">Update</button>
+    <button type="submit" class="btn btn-secondary text-black">Update</button>
   </form>
 </template>
 

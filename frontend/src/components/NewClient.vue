@@ -56,7 +56,7 @@ const submitClient = async () => {
   } catch ({ response }) {
     const { error } = response.data;
     if (error.match('email_1 dup key')) {
-      setClientError(`Account with the email ${email} already exists!`);
+      setClientError(`The account with the email ${email} already exists`);
     } else {
       console.error(error);
     }
